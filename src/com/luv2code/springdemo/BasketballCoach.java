@@ -7,4 +7,10 @@ public class BasketballCoach implements Coach {
 		return "Shoot some hoops, especially 3's";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
