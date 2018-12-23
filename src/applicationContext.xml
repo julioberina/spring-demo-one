@@ -17,13 +17,19 @@
     </bean>
     
     <!-- Define dependency -->
-    <bean id="myFortune" class="com.luv2code.springdemo.HappyFortuneService">
+    <bean id="myFortuneService" class="com.luv2code.springdemo.HappyFortuneService">
     </bean>
     
  	<bean id="myCoach" class="com.luv2code.springdemo.TrackCoach">
  		
  		<!-- Set up constructor injection -->
- 		<constructor-arg ref="myFortune"></constructor-arg>
+ 		<constructor-arg ref="myFortuneService"></constructor-arg>
+ 	</bean>
+ 	
+  	<bean id="myCricketCoach" class="com.luv2code.springdemo.CricketCoach">
+ 		
+ 		<!-- Set up constructor injection -->
+ 		<property name="fortuneService" ref="myFortuneService"></property>
  	</bean>
 </beans>
 
