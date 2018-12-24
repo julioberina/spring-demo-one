@@ -13,4 +13,13 @@ public class BasketballCoach implements Coach {
 		return null;
 	}
 
+	// add an init method
+	public void doMyStartupStuff() {
+		System.out.println("BasketballCoach: inside method doMyStartupStuff");
+	}
+	
+	// add a destroy method
+	public void doMyCleanupStuff() {
+		System.out.println("BasketballCoach: inside method doMyCleanupStuff");
+	}
 }

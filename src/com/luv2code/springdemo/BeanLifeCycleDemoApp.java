@@ -10,7 +10,7 @@ public class BeanLifeCycleDemoApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beanLifeCycle-applicationContext.xml");
 		
 		// retrieve bean from Spring container
-		Coach theCoach = context.getBean("myCoach", Coach.class);
+		Coach theCoach = context.getBean("myBasketballCoach", Coach.class);
 		
 		// print results
 		System.out.println(theCoach.getDailyWorkout());
