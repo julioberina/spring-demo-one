@@ -19,7 +19,7 @@
     </bean>
     
     <!-- Define dependency -->
-    <bean id="myFortuneService" class="com.luv2code.springdemo.HappyFortuneService">
+    <bean id="myFortuneService" class="com.luv2code.springdemo.RandomFortuneService">
     </bean>
     
  	<bean id="myCoach" class="com.luv2code.springdemo.TrackCoach">
